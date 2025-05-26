@@ -27,7 +27,7 @@
     </header>
     <main class="mdl-layout__content">
       <div class="right-image">
-        <img src="./images/factorial.png" alt="Factorial Icon" width="250" />
+        <img src="./images/image.png" alt="Factorial Icon" width="250" />
       </div>
       <br />
       <div class="page-content">Enter a non-negative integer to calculate its factorial:</div>
