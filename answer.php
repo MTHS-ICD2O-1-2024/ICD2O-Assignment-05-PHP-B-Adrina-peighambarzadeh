@@ -41,10 +41,6 @@
 
         echo "<b>Input Number: " . $inputNumber . "</b><br><br>";
 
-        // Validate input
-        if (!is_numeric($inputNumber) || $inputNumber < 0 || floor($inputNumber) != $inputNumber) {
-          echo "<b>Please enter a valid non-negative whole number.</b>";
-        } else {
           // Calculate factorial with loop
           while ($counter <= $inputNumber) {
             $factorial *= $counter;
@@ -56,7 +52,7 @@
           }
 
           echo "<b>Calculation: " . $calculationSteps . " = " . $factorial . "</b>";
-        }
+
         ?>
         <br><br>
         <div class="page-content-answer">
