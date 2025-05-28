@@ -32,28 +32,29 @@
       <div class="page-content-answer">
         <div id="answer">
           <?php
-            // input
-            $factorial = 1;
+          // input
+          $factorial = 1;
 
-            if (isset($_GET["number"])) {
-              $number = $_GET["number"];
+          if (isset($_GET["base-number"])) {
+            $number = $_GET["base-number"];
 
-              // validation: check if it's a non-negative whole number
-              if ($number >= 0 && floor($number) == $number) {
-                // process using counter
-                $counter = 1;
-                while ($counter <= $number) {
-                  $factorial = $factorial * $counter;
-                  $counter = $counter + 1;
-                }
+            // validation: check if it's a non-negative whole number
+            if (is_numeric($number) && $number >= 0 && floor($number) == $number) {
+              // process using counter
+              $counter = 1;
+              while ($counter <= $number) {
+                $factorial = $factorial * $counter;
+                $counter = $counter + 1;
+              }
 
-                // output
-                echo "The factorial of " . $number . " is: " . $factorial . ".";
-              } else {
-                echo "Please enter a valid non-negative whole number.";
+              // output
+              echo "The factorial of " . $number . " is: " . $factorial . ".";
+            } else {
+              echo "Please enter a valid non-negative whole number.";
             }
           }
           ?>
+
         </div>
       </div>
       <div class="page-content-return">
