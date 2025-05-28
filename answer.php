@@ -27,7 +27,7 @@
     </header>
     <main class="mdl-layout__content">
       <div class="right-image">
-        <img src="./images/image.png"" alt="Factorial image" width="500" />
+        <img src="./images/image.png" alt="Factorial image" width="500" />
       </div>
       <div class="page-content-answer">
         <div id="answer">
@@ -52,6 +52,7 @@
               } else {
                 echo "Please enter a valid non-negative whole number.";
             }
+          }
           ?>
         </div>
       </div>
